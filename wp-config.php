@@ -77,10 +77,10 @@ $table_prefix = 'wpb_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', true );
 
 // Disable display of errors and warnings
-define( 'WP_DEBUG_DISPLAY', false );
+define( 'WP_DEBUG_DISPLAY', true );
 ini_set( 'display_errors', 0 );
 // error_reporting(E_ALL);
 
