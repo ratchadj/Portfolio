@@ -98,9 +98,6 @@ require_once ABSPATH . 'wp-settings.php';
 /** additional */
 // If we're behind a proxy server and using HTTPS, we need to alert WordPress of that fact
 // see also http://codex.wordpress.org/Administration_Over_SSL#Using_a_Reverse_Proxy
-/* SSL Settings */
-define('FORCE_SSL_ADMIN', true);
-
 /* Turn HTTPS 'on' if HTTP_X_FORWARDED_PROTO matches 'https' */
 if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) {
     $_SERVER['HTTPS'] = 'on';
