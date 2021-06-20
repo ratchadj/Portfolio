@@ -102,3 +102,7 @@ require_once ABSPATH . 'wp-settings.php';
 if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) {
     $_SERVER['HTTPS'] = 'on';
 }
+
+
+define( 'WP_HOME', 'http://ratchada-jududom.herokuapp.com' );
+define('WP_SITEURL', 'http://ratchada-jududom.herokuapp.com');
