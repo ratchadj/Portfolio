@@ -37,12 +37,10 @@ if ( $the_theme != 'deep-light' && $the_theme != 'deep-free' && $the_theme != 'd
 // Define directories
 if ( $the_theme == 'deep-light' || $the_theme == 'deep' || $the_theme == 'deep-modern-business' || $the_theme == 'deep-crypto' ) {
 	if ( ! defined( 'DEEP_DIR' ) ) {
-		$url = set_url_scheme( plugin_dir_path( __FILE__ ), 'https' );
-		define( 'DEEP_DIR',  $url);
+		define( 'DEEP_DIR',  plugin_dir_path( __FILE__ ));
 	}
 	if ( ! defined( 'DEEP_URL' ) ) {
-		$url = set_url_scheme( plugin_dir_url( __FILE__ ), 'https' );
-		define( 'DEEP_URL',  $url);
+		define( 'DEEP_URL',  plugin_dir_url( __FILE__ ));
 	}
 	if ( ! defined( 'DEEP_ASSETS_URL' ) ) {
 		define( 'DEEP_ASSETS_URL', DEEP_URL . 'assets/dist/' );
@@ -52,12 +50,10 @@ if ( $the_theme == 'deep-light' || $the_theme == 'deep' || $the_theme == 'deep-m
 	}
 } else {
 	if ( ! defined( 'DEEP_DIR' ) ) {
-		$url = set_url_scheme( get_template_directory(), 'https' );
-		define( 'DEEP_DIR',  $url . '/' );
+		define( 'DEEP_DIR',  get_template_directory() . '/' );
 	}
 	if ( ! defined( 'DEEP_URL' ) ) {
-		$url = set_url_scheme( get_template_directory_uri(), 'https' );
-		define( 'DEEP_URL', $url );
+		define( 'DEEP_URL', get_template_directory_uri() );
 	}
 	if ( ! defined( 'DEEP_ASSETS_URL' ) ) {
 		define( 'DEEP_ASSETS_URL', DEEP_URL . '/assets/dist/' );
